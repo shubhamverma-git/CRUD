@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="container">
+    <header class="title_container">Appointment Form</header>
+    <div class="form_container">
+      <form id="myForm" class="form">
+        <div class="name_field">
+          <input id="userName" type="text" placeholder="name" />
+        </div>
+        <div class="email_field">
+          <input id="userEmail" type="text" placeholder="Email" />
+        </div>
+        <div class="address_field">
+          <input id="userAddress" type="text" placeholder="address" />
+        </div>
+        <div class="timing_field">
+          <select id="userTiming" style="padding: 10px">
+            <option value="09am">09am</option>
+            <option value="12pm">12pm</option>
+            <option value="15pm">15pm</option>
+            <option value="18pm">18pm</option>
+          </select>
+        </div>
+        <button id="formButton" type="submit">Schedule</button>
+      </form>
+    </div>
+    <div class="list_container">Appointment List</div>
+    <hr />
+    <div id="listContainer" class="list_container"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
