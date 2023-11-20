@@ -23,7 +23,6 @@ async function formSubmit(e) {
   };
 
   // sending data to backend
-
   const responseData = await sendData(data);
 
   if (
