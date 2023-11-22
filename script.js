@@ -5,9 +5,9 @@ const clientAddress = document.getElementById("userAddress");
 const clientTiming = document.getElementById("userTiming");
 const formBtn = document.getElementById("formButton");
 
-// we need to get data from backend whenever user loads the page
-// it can be when user visits for the first time or refresh the page
-// event is 'DOM Content Loaded' which gets fired when we refresh or load the page
+// We need to get data from backend whenever user loads the page
+// It can be when user visits for the first time or refresh the page
+// Event is 'DOM Content Loaded' which gets fired when we refresh or load the page
 
 document.addEventListener("DOMContentLoaded", getAllData);
 
@@ -42,10 +42,10 @@ async function formSubmit(e) {
   }
 }
 
+// This function will send data to the backend
 async function sendData(formData) {
-  //   this function will send data to the backend
   const response = await fetch(
-    "https://crudcrud.com/api/faa2772c4b7c4e5c84652b349cb03869/listData",
+    "https://crudcrud.com/api/50d7474d5fab4bbb91db81349a8fc1bc/listData",
     {
       method: "POST",
       body: JSON.stringify(formData),
@@ -87,7 +87,7 @@ function uiCreator(responseData) {
 
 async function getAllData() {
   const receivedData = await fetch(
-    "https://crudcrud.com/api/faa2772c4b7c4e5c84652b349cb03869/listData",
+    "https://crudcrud.com/api/50d7474d5fab4bbb91db81349a8fc1bc/listData",
     {
       method: "GET",
     }
